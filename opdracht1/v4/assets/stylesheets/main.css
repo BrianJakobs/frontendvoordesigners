@@ -1,0 +1,506 @@
+/*
+========================================
+Reset
+========================================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+:root {
+    font-size: 1em;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*
+========================================
+Body style
+========================================
+*/
+
+body {
+    color: black;
+    font-size: 1rem;
+    font-kerning: normal;
+    font-weight: 400;
+    background-color: #2d3436;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    margin: 0 4vw;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin: 1.5rem 0 0 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p + p {
+    margin-top: 1rem;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+
+/*
+========================================
+Nav style
+========================================
+*/
+
+header {
+    background-image: url(../images/photos/green/green-pitch.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: #fff;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+header nav ul:first-of-type {
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.75);
+    max-width: 35rem;
+}
+
+header nav ul:first-of-type form {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 3.2rem;
+    z-index: 0;
+}
+
+header nav input[type=text] {
+    padding: 0 1rem;
+    height: 100%;
+    width: 100%;
+    margin-right: -3.2rem;
+    font-size: 1rem;
+    border-right: none;
+    border-radius: 0.2rem;
+}
+
+header nav button {
+    font-family: NexaBold;
+    font-size: 1rem;
+    padding: 0 1rem;
+    height: 100%;
+    float: right;
+    background: #fff;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    border-radius: 0.2rem;
+}
+
+header nav form button img {
+    width: 1.2rem;
+}
+
+header nav ul:last-of-type {
+    align-items: center;
+    font-size: 0.8rem;
+    max-width: 35rem;
+    margin: auto;
+}
+
+header nav ul:last-of-type form {
+    margin: 0.5rem 0 5rem;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.75);
+}
+
+header nav ul:last-of-type li {
+    display: inline-block;
+    margin: 0 -0.11rem;
+    width: 20%;
+}
+
+header nav ul input[type="checkbox"] {
+    display: none;
+    z-index: 0;
+    opacity: 0;
+}
+
+header nav ul:last-of-type label {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+    color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+/*
+========================================
+Foto's style
+========================================
+*/
+
+input[type="checkbox"][id="red"] + label {
+    color: #ff3f34;
+    font-weight: 900;
+    border: 0.2rem solid #ff3f34;
+    background-color: rgba(255, 63, 52, 1);
+    box-shadow: inset 0 -3rem 0 0 #ff3f34;
+}
+
+input[type="checkbox"][id="red"]:hover + label,
+input[type="checkbox"][id="red"]:checked + label {
+    color: #fff;
+    background-color: rgba(255, 63, 52, 0.4);
+    box-shadow: inset 0 0em 0 0 #ff3f34;
+}
+
+.redArticle,
+.redArticle div {
+    background: #ff3f34;
+}
+
+input[type="checkbox"][id="orange"] + label {
+    color: #ffa801;
+    font-weight: 900;
+    border: 0.2rem solid #ffa801;
+    background-color: rgba(255, 168, 1, 1);
+    box-shadow: inset 0 -3rem 0 0 #ffa801;
+}
+
+input[type="checkbox"][id="orange"]:hover + label,
+input[type="checkbox"][id="orange"]:checked + label {
+    color: #fff;
+    background-color: rgba(255, 168, 1, 0.4);
+    box-shadow: inset 0 0 0 0 #ffa801;
+}
+
+.orangeArticle,
+.orangeArticle div {
+    background: #ffa801;
+}
+
+input[type="checkbox"][id="yellow"] + label {
+    color: #ffd32a;
+    font-weight: 900;
+    border: 0.2rem solid #ffd32a;
+    background-color: rgba(255, 211, 42, 1);
+    box-shadow: inset 0 -3rem 0 0 #ffd32a;
+}
+
+input[type="checkbox"][id="yellow"]:hover + label,
+input[type="checkbox"][id="yellow"]:checked + label {
+    color: #fff;
+    background-color: rgba(255, 211, 42, 0.4);
+    box-shadow: inset 0 0 0 0 #ffd32a;
+}
+
+.yellowArticle,
+.yellowArticle div {
+    background: #ffd32a;
+}
+
+input[type="checkbox"][id="green"] + label {
+    color: #05c46b;
+    font-weight: 900;
+    border: 0.2rem solid #05c46b;
+    background-color: rgba(5, 196, 107, 1);
+    box-shadow: inset 0 -3rem 0 0 #05c46b;
+}
+
+input[type="checkbox"][id="green"]:hover + label,
+input[type="checkbox"][id="green"]:checked + label {
+    color: #fff;
+    background-color: rgba(5, 196, 107, 0.4);
+    box-shadow: inset 0 0 0 0 #05c46b;
+}
+
+.greenArticle,
+.greenArticle div {
+    background: #05c46b;
+}
+
+input[type="checkbox"][id="blue"] + label {
+    color: #0fbcf9;
+    font-weight: 900;
+    border: 0.2rem solid #0fbcf9;
+    background-color: rgba(15, 188, 249, 1);
+    box-shadow: inset 0 -3rem 0 0 #0fbcf9;
+}
+
+input[type="checkbox"][id="blue"]:hover + label,
+input[type="checkbox"][id="blue"]:checked + label {
+    color: #fff;
+    background-color: rgba(15, 188, 249, 0.4);
+    box-shadow: inset 0 0 0 0 #0fbcf9;
+}
+
+.blueArticle,
+.blueArticle div {
+    background: #0fbcf9;
+}
+
+input[type="checkbox"][id="pink"] + label {
+    color: #e84393;
+    font-weight: 900;
+    border: 0.2rem solid #e84393;
+    background-color: rgba(232, 67, 147, 1);
+    box-shadow: inset 0 -3rem 0 0 #e84393;
+}
+
+input[type="checkbox"][id="pink"]:hover + label,
+input[type="checkbox"][id="pink"]:checked + label {
+    color: #fff;
+    background-color: rgba(232, 67, 147, 0.4);
+    box-shadow: inset 0 0 0 0 #e84393;
+}
+
+.pinkArticle,
+.pinkArticle div {
+    background: #e84393;
+}
+
+input[type="checkbox"][id="purple"] + label {
+    color: #8e44ad;
+    font-weight: 900;
+    border: 0.2rem solid #8e44ad;
+    background-color: rgba(142, 68, 173, 1);
+    box-shadow: inset 0 -3rem 0 0 #8e44ad;
+}
+
+input[type="checkbox"][id="purple"]:hover + label,
+input[type="checkbox"][id="purple"]:checked + label {
+    color: #fff;
+    background-color: rgba(142, 68, 173, 0.4);
+    box-shadow: inset 0 0 0 0 #8e44ad;
+}
+
+.purpleArticle,
+.purpleArticle div {
+    background: #8e44ad;
+}
+
+input[type="checkbox"][id="brown"] + label {
+    color: #A04000;
+    font-weight: 900;
+    border: 0.2rem solid #A04000;
+    background-color: rgba(160, 64, 0, 1);
+    box-shadow: inset 0 -3rem 0 0 #A04000;
+}
+
+input[type="checkbox"][id="brown"]:hover + label,
+input[type="checkbox"][id="brown"]:checked + label {
+    color: #fff;
+    background-color: rgba(160, 64, 0, 0.4);
+    box-shadow: inset 0 0em 0 0 #A04000;
+}
+
+.brownArticle,
+.brownArticle div {
+    background: #A04000;
+}
+
+input[type="checkbox"][id="black"] + label {
+    color: #1e272e;
+    font-weight: 900;
+    border: 0.2rem solid #1e272e;
+    background-color: rgba(30, 39, 46, 1);
+    box-shadow: inset 0 -3rem 0 0 #1e272e;
+}
+
+input[type="checkbox"][id="black"]:hover + label,
+input[type="checkbox"][id="black"]:checked + label {
+    color: #fff;
+    background-color: rgba(30, 39, 46, 0.4);
+    box-shadow: inset 0 0 0 0 #1e272e;
+}
+
+.blackArticle,
+.blackArticle div {
+    background: #1e272e;
+}
+
+input[type="checkbox"][id="white"] + label {
+    color: #ecf0f1;
+    font-weight: 900;
+    border: 0.2rem solid #ecf0f1;
+    background-color: rgba(236, 240, 241, 1);
+    box-shadow: inset 0 -3rem 0 0 #ecf0f1;
+}
+
+input[type="checkbox"][id="white"]:hover + label,
+input[type="checkbox"][id="white"]:checked + label {
+    color: #fff;
+    background-color: rgba(236, 240, 241, 0.4);
+    box-shadow: inset 0 0 0 0 #ecf0f1;
+}
+
+.whiteArticle,
+.whiteArticle div {
+    background: #ecf0f1;
+}
+
+.transition {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*
+========================================
+Foto's style
+========================================
+*/
+
+.flex-container {
+    max-width: 90rem;
+    font-size: 0;
+}
+
+.flex-container article {
+    position: relative;
+    float: left;
+    width: 100%;
+    opacity: 1;
+    height: 18rem;
+    margin: 0.5%;
+    transition: all 0.5s;
+}
+
+main .flex-container .show {
+    height: 18rem;
+    opacity: 1;
+    padding: 0;
+    margin: 0.5%;
+}
+
+.flex-container .hide {
+    height: 0;
+    opacity: 0;
+    margin: 0;
+}
+
+@media (min-width: 620px) {
+    .flex-container article {
+        width: 49%;
+    }
+}
+
+@media (min-width: 840px) {
+    .flex-container article {
+        width: 32%;
+    }
+}
+
+@media (min-width: 1080px) {
+    .flex-container article {
+        width: 24%;
+    }
+}
+
+.flex-container article img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.flex-container article div {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    z-index: 100;
+    width: 1.2rem;
+    height: 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 60%, 0 100%);
+    transition: all 0.5s ease;
+}
+
+.flex-container article:hover div {
+    width: 1.5rem;
+    height: 2.5rem;
+}
+
+/*
+========================================
+Footer style
+========================================
+*/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+body > footer {
+    background-color: #1e272e;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    color: #ecf0f1;
+}
