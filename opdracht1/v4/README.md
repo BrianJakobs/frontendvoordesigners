@@ -7,4 +7,4 @@ De filterknoppen hebben een deels transparante achtergrond kleur gekregen wat de
 
 Tot slot is er veranderd dat de gebruiker meerdere filters tegelijkertijd aan kan hebben, hierdoor is er minder ruimte voor fouten of verwarring over de mogelijkheid tot slechts één filter optie.
 
-[Demo versie 4](https://BrianJakobs.github.io/frontendvoordesigners/opdracht1/v14/)
+[Demo versie 4](https://BrianJakobs.github.io/frontendvoordesigners/opdracht1/v4/)
