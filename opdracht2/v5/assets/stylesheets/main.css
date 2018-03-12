@@ -1,0 +1,453 @@
+/*
+========================================
+Reset
+========================================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+:root {
+    font-size: 1em;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*
+========================================
+Body style
+========================================
+*/
+
+body {
+    color: black;
+    font-size: 1rem;
+    font-kerning: normal;
+    font-weight: 400;
+    background-color: #1e272e;
+    background-color: #fff;
+    font-family: 'Mukta Malar', sans-serif;
+    font-family: 'Noto Serif', serif;
+}
+
+main {
+    flex: 1;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin: 1.5rem 0 0 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p + p {
+    margin-top: 1rem;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+body {
+    background: #ffffff;
+    overflow-x: hidden;
+    color: #1e272e;
+}
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    line-height: 4rem;
+    letter-spacing: -0.02rem;
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #1e272e;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+/*
+h1,
+h2,
+p {
+    z-index: 1;
+    margin-top: 0;
+}
+*/
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+p {
+    color: #fff;
+    font-size: 1rem;
+    max-width: 30rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 75rem;
+}
+
+.button {
+    display: inline-block;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 0.75rem;
+    color: #fff;
+    background-color: #1e272e;
+    margin: 1.5rem 0 0 0;
+    align-self: center;
+}
+
+#cyprus .zij-foto,
+#frankrijk .zij-foto {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#cyprus .zij-foto {
+    background-image: url(../images/cyprus.JPG);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#frankrijk .zij-foto {
+    background-image: url(../images/parijs.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#italië .zij-foto {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/veneti%C3%AB.jpeg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tekst {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-27deg);
+    opacity: 0;
+    transition: all 500ms;
+}
+
+.tekst p {
+    margin-bottom: 2rem;
+}
+
+.tekst a {
+    padding: 0.6rem;
+    color: fff;
+    background-color: #2CC97E;
+}
+
+.showTekst {
+    opacity: 1;
+    transform: rotate(0);
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.volledig {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main a button {
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    border: none;
+    outline: none;
+    background-color: #1e272e;
+    cursor: pointer;
+    width: 3rem;
+    height: 3.5rem;
+    opacity: 0;
+    z-index: -2;
+    -webkit-clip-path: polygon(100% 100%, 50% 75%, 0 100%, 0 35%, 50% 0, 100% 35%);
+    clip-path: polygon(100% 100%, 50% 75%, 0 100%, 0 35%, 50% 0, 100% 35%);
+    transition: all 500ms ease;
+}
+
+main a button:hover {
+    background-color: #2CC97E;
+}
+
+.showBtn {
+    z-index: 10;
+    opacity: 1;
+}
+
+/* Navigation */
+
+header nav {
+    position: fixed;
+    top: -5rem;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #1e272e;
+    opacity: 0;
+    transition: all 500ms;
+}
+
+.showNav {
+    top: 0rem;
+    opacity: 1;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    margin: auto;
+}
+
+header nav ul li {
+    margin: auto 0;
+}
+
+header nav ul li {
+    margin-right: 1rem;
+}
+
+header nav ul li a:hover {
+    border-bottom: 0.2rem solid #2CC97E;
+    color: #2CC97E;
+}
+
+header nav ul li a {
+    padding: 0 1rem;
+    transition: all 250ms;
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    height: 3.5rem;
+}
+
+header nav ul li:first-of-type {
+    margin-left: auto;
+}
+
+.beweeg-totaal {
+    transition: all 500ms;
+}
+
+.moveLeft {
+    transform: translateX(-100vw);
+}
+
+.moveRight {
+    transform: translateX(0vw);
+}
+
+.beeld-tekst {
+    position: absolute;
+    left: 0rem;
+    bottom: 2rem;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    padding: 0.8rem 1rem 0.8rem 3rem;
+}
+
+.beeld img {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.beeld {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    transition: all 250ms;
+}
+
+#beeld-1 {
+    /*
+    opacity: 1;
+    z-index: 1;
+*/
+    transform: translateX(0vw);
+}
+
+#beeld-2 {
+    /*
+    opacity: 1;
+    z-index: 0;
+*/
+    transform: translateX(100vw);
+}
+
+#beeld-3 {
+    /*
+    opacity: 1;
+    z-index: -1;
+*/
+    transform: translateX(200vw);
+}
+
+.nextImg {
+    opacity: 1;
+    z-index: 2;
+}
+
+#pijl-links {
+    background-color: white;
+    -webkit-clip-path: polygon(100% 30%, 60% 30%, 60% 0, 0 50%, 60% 100%, 60% 70%, 100% 70%);
+    clip-path: polygon(100% 30%, 60% 30%, 60% 0, 0 50%, 60% 100%, 60% 70%, 100% 70%);
+}
+
+#pijl-rechts {
+    background-color: white;
+    -webkit-clip-path: polygon(0 30%, 40% 30%, 40% 0, 100% 50%, 40% 100%, 40% 70%, 0 70%);
+    clip-path: polygon(0 30%, 40% 30%, 40% 0, 100% 50%, 40% 100%, 40% 70%, 0 70%);
+}
+
+#home {
+    height: 100vh;
+}
+
+#home .fade {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    margin-top: -2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    border-radius: 50%;
+}
+
+#home .fade:nth-of-type(1) {
+    left: 1rem;
+}
+
+#home .fade:nth-of-type(2) {
+    right: 1rem;
+
+}
+
+.pijl {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.showSlide-1 {
+    transform: translateX(0vw);
+}
+
+.showSlide-2 {
+    transform: translateX(-100vw);
+}
+
+.showSlide-3 {
+    transform: translateX(-200vw);
+}
+
+.hidePijl {
+    opacity: 0;
+    z-index: -100;
+    visibility: hidden;
+    transition: all 250ms;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/*
+========================================
+Footer style
+========================================
+*/
+
+body > footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e272e;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+body > footer p {
+    color: #ecf0f1;
+}
